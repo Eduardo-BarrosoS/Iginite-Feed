@@ -1,0 +1,129 @@
+.post {
+    border-radius: 8px;
+    padding: 4rem;
+    background-color: var(--gray-800);
+}
+
+.post + .post {
+    margin-top: 3.2rem;
+}
+.post header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.post header time {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--gray-400);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.authorInfo strong{
+    display: block;
+    color: var(--gray-100);
+    line-height: 160%;
+    font-size: 1.6rem;
+}
+.authorInfo span{
+    display: block;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+
+.content{
+    line-height: 1.6;
+    color: var(--gray-300);
+}
+
+.content p {
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--gray-300);
+}
+
+
+.content p a{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--green-500);
+    text-decoration: none;
+}
+
+.content p a:hover {
+    color: var(--green-300);
+}
+
+
+.form {
+    border-top: 2px solid var(--gray-600);
+    margin-top: 2.4rem;
+    padding-top: 2.4rem;
+}
+
+.form strong {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
+.form textarea {
+    margin-top: 1.6rem;
+    background: var(--gray-900);
+    width: 100%;
+    height: 9.6rem;
+    resize: none;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0;
+    color: var(--gray-100);
+}
+
+.form footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.form:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.form button[type="submit"] {
+    margin-top: 1.6rem;
+    background: var(--green-500);
+    padding: 1.5rem 2.4rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    
+}
+
+.form button[type="submit"]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.form button[type="submit"]:not(:disabled):hover {
+    background-color: var(--green-300);
+}
+
+
+.commentList {
+    width: 100%;
+}
